@@ -1,0 +1,16 @@
+.gradle/
+.kotlin/
+build/
+.intellijPlatform/
+
+# Local signing material
+*.pem
+*.crt
+*.key
+
+# Local IDE files
+.idea/
+*.iml
+
+# Agent planning scratch
+docs/superpowers/

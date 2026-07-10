@@ -1,0 +1,16 @@
+<idea-plugin>
+    <id>cc.pakanon.skunk.sql</id>
+    <name>Skunk SQL Support</name>
+    <vendor url="https://github.com/ppantisawat/skunk-intellij">Pakanon Pantisawat</vendor>
+    <description><![CDATA[
+        Adds IntelliJ Scala type inference support for Skunk's Scala 2 sql interpolator.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.java</depends>
+    <depends>org.intellij.scala</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <postStartupActivity implementation="com.github.ppantisawat.skunk.intellij.SkunkExtensionRegistrar"/>
+    </extensions>
+</idea-plugin>
