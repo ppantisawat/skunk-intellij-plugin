@@ -1,7 +1,7 @@
 package com.github.ppantisawat.skunk.intellij;
 
 import com.intellij.ide.plugins.IdeaPluginDescriptor;
-import com.intellij.ide.plugins.PluginManagerCore;
+import com.intellij.ide.plugins.PluginManager;
 import com.intellij.openapi.diagnostic.Logger;
 import com.intellij.openapi.extensions.PluginId;
 import com.intellij.openapi.project.Project;
@@ -45,7 +45,7 @@ public final class SkunkExtensionRegistrar implements ProjectActivity {
     }
 
     private static Path extensionJarPath() {
-        IdeaPluginDescriptor descriptor = PluginManagerCore.getPlugin(PluginId.getId(PLUGIN_ID));
+        IdeaPluginDescriptor descriptor = PluginManager.getInstance().findEnabledPlugin(PluginId.getId(PLUGIN_ID));
         if (descriptor == null) {
             return null;
         }
