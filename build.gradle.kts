@@ -53,7 +53,7 @@ intellijPlatform {
 
         changeNotes.set(
             """
-            Initial version with Skunk 1.0.0 Scala 2 sql interpolator support.
+            Removes internal IntelliJ Platform API usage flagged by Marketplace verification.
             """.trimIndent()
         )
 
